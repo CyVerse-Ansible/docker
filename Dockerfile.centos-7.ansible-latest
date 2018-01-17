@@ -14,7 +14,7 @@ rm -f /lib/systemd/system/anaconda.target.wants/*;
 
 # Install Ansible
 RUN yum groupinstall -y "development tools"
-RUN yum -y install epel-release git sudo python-devel python-setuptools python-crypto openssl-devel
+RUN yum -y install epel-release git sudo python-devel python-setuptools python-crypto openssl-devel openssl
 RUN easy_install pip
 RUN pip install httplib2 ansible
 
